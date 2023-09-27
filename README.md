@@ -1,55 +1,78 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# Project Name: Swift Chat App
 
-# Flash-Chat
+<img src="./ScreenshotWelcomeScreen.png" alt="Descrição da imagem" width="150" height="300" />
 
-## Our Goal
+<img src="./ScreenshotRegisterScreen.png" alt="Descrição da imagem" width="150" height="300" />
 
-One of the most fundamental component of modern iOS apps is the Table View. Table Views are used everywhere from the Mail app to the Messages app. It’s a crucial part of every iOS developer’s tool belt. In this tutorial we’ll be getting to grips with Table Views, creating custom cells, and making our own cloud-based backend database. It’s going to be epic, so buckle up.
+<img src="./ScreenshotChatScreen.png" alt="Descrição da imagem" width="150" height="300" />
 
-## What you will create
+## Description
 
-Flash Chat is an internet based messaging app similar to WhatsApp, the popular messaging app that was bought by Facebook for $22 billion. We will be using a service called Firebase Firestore as a backend database to store and retrieve our messages from the cloud. 
+This Swift project, created using UIKit, serves as a practical example of integrating various technologies and concepts into a chat application. Through this project, you will learn how to use CocoaPods to incorporate the CLTypingLabel library, as well as how to use Swift Package Manager (SPM) to install the Firebase SDK and IQKeyboardManagerSwift. You will also gain insight into configuring the AppDelegate, managing the view lifecycle with `viewWillAppear` and `viewWillDisappear` methods, integrating Firebase for authentication and user registration, and creating different chat views based on the logged-in user.
 
-## What you will learn
+## Features
 
-* How to integrate third party libraries in your app using Cocoapods and Swift Package Manager.
-* How to store data in the cloud using Firebase Firestore.
-* How to query and sort the Firebase database.
-* How to use Firebase for user authentication, registration and login.
-* How to work with UITableViews and how to set their data sources and delegates.
-* How to create custom views using .xib files to modify native design components.
-* How to embed View Controllers in a Navigation Controller and understand the navigation stack.
-* How to create a constants file and use static properties to store Strings and other constants.
-* Learn about Swift loops and create animations using loops.
-* Learn about the App Lifecycle and how to use viewWillAppear or viewWillDisappear.
-* How to create direct Segues for navigation.
+- User-friendly welcome and registration screens.
+- Real-time chat functionality.
+- Seamless integration with Firebase for authentication and data storage.
+- Dynamic chat interface with different views based on user credentials.
 
+## Prerequisites
 
-# Constants
-```
-struct K {
-    static let cellIdentifier = "ReusableCell"
-    static let cellNibName = "MessageCell"
-    static let registerSegue = "RegisterToChat"
-    static let loginSegue = "LoginToChat"
-    
-    struct BrandColors {
-        static let purple = "BrandPurple"
-        static let lightPurple = "BrandLightPurple"
-        static let blue = "BrandBlue"
-        static let lighBlue = "BrandLightBlue"
-    }
-    
-    struct FStore {
-        static let collectionName = "messages"
-        static let senderField = "sender"
-        static let bodyField = "body"
-        static let dateField = "date"
-    }
-}
+Before you begin, ensure you have met the following requirements:
 
-```
+- Xcode (version 15.0 or higher)
+- Swift (version 5.0)
+- CocoaPods
+- Swift Package Manager (SPM)
 
->This is a companion project to The App Brewery's Complete App Developement Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+## Installation
 
-![End Banner](Documentation/readme-end-banner.png)
+1. Clone the repository:
+
+   ```shell
+   git clone https://github.com/luuanfaria/flash-chat-iOS13.git
+   ```
+
+2. Install dependencies using CocoaPods:
+
+   ```shell
+   cd flash-chat-iOS13
+   pod install
+   ```
+
+3. Open the project in Xcode:
+
+   ```shell
+   open flash-chat-iOS13.xcworkspace
+   ```
+
+4. Install Firebase SDK and IQKeyboardManagerSwift via SPM:
+   - In Xcode, navigate to File > Swift Packages > Add Package Dependency...
+   - Enter the Firebase and IQKeyboardManagerSwift repository URLs and follow the prompts to install them.
+
+5. Configure Firebase in your AppDelegate by following Firebase setup instructions.
+
+6. Build and run the project in Xcode.
+
+## Usage
+
+1. On the welcome screen, users can log in if they have an existing account or register for a new one.
+
+2. After logging in or registering, users will be directed to the chat interface.
+
+3. The chat interface varies based on the user's credentials, providing different views and functionality.
+
+4. Users can start chatting and enjoy the real-time chat experience.
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact me:
+
+- Website: [luuanfaria.dev](https://luuanfaria.dev)
+- LinkedIn: [linkedin.com/in/luuanfaria](https://linkedin.com/in/luuanfaria)
+- Twitter: [twitter.com/luuanfariaf](https://twitter.com/luuanfariaf)
+
+## Credits
+
+This project is part of The App Brewery's Complete App Development Bootcamp. For a comprehensive app development learning experience, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/).
